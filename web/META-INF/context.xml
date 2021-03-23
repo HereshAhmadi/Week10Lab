@@ -1,18 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context path="/Week10DemoSecurity">
-    <Resource
-        name="jdbc/notesdb"
-        url="jdbc:mysql://localhost:3306/notesdb"
-        username="root"
-        password="password"
-        maxIdle="30"
-        maxActive="100"
-        maxWait="10000"
-        logAbandoned="true"
-        removeAbandoned="true"
-        removeAbandonedTimeout="60"
-        auth="Container"
-        type="javax.sql.DataSource"
-        driverClassName="com.mysql.jdbc.Driver"
-    />
+<Context path="/Week10Lab">
+  <Resource auth="Container" driverClassName="com.mysql.jdbc.Driver" logAbandoned="true" maxActive="100" maxIdle="30" maxWait="10000" name="jdbc/notesdb" password="password" removeAbandoned="true" removeAbandonedTimeout="60" type="javax.sql.DataSource" url="jdbc:mysql://localhost:3308/notesdb" username="root"/>
 </Context>
